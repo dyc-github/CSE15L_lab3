@@ -21,9 +21,9 @@ public class ListTests {
         List<String> list3 = new ArrayList<String>(Arrays.asList(new String[]{"apple", "bapple", "astro"}));
         List<String> expected3 = new ArrayList<String>(Arrays.asList(new String[]{"apple", "astro"}));
 
-        Assert.assertEquals(expected1, ListExamples.filter(list1, sc));
-        Assert.assertEquals(expected2, ListExamples.filter(list2, sc));
-        Assert.assertEquals(expected3, ListExamples.filter(list3, sc));
+        assertEquals(expected1, ListExamples.filter(list1, sc));
+        assertEquals(expected2, ListExamples.filter(list2, sc));
+        assertEquals(expected3, ListExamples.filter(list3, sc));
     }
 
     @Test
@@ -45,9 +45,9 @@ public class ListTests {
         List<String> expected4 = new ArrayList<String>(Arrays.asList(new String[]{"a", "a", "b", "c"}));
 
 
-        Assert.assertEquals(expected1, ListExamples.merge(list1A, list1B));
-        Assert.assertEquals(expected2, ListExamples.merge(list2A, list2B));
-        Assert.assertEquals(expected3, ListExamples.merge(list3A, list3B));
-        Assert.assertEquals(expected4, ListExamples.merge(list4A, list4B));
+        assertEquals(expected1, ListExamples.merge(list1A, list1B));
+        assertEquals(expected2, ListExamples.merge(list2A, list2B));
+        assertEquals(expected3, ListExamples.merge(list3A, list3B));
+        assertEquals(expected4, ListExamples.merge(list4A, list4B));
     }
 }
